@@ -1,0 +1,21 @@
+{
+  "name": "gerenciador-tarefas",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de tarefas em Node.js",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaRaquelCarvalho/Gerenciador-de-Tarefas.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AnaRaquelCarvalho/Gerenciador-de-Tarefas/issues"
+  },
+  "homepage": "https://github.com/AnaRaquelCarvalho/Gerenciador-de-Tarefas#readme"
+}
