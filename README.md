@@ -32,38 +32,65 @@ Sistema de Arquivos ( fs)
 Readline
 Caminho
 📂 Estrutura do Projeto
+
 gerenciador-tarefas/
 │
+
 ├── src/
+
 │   ├── services/
+
 │   │   ├── arquivoService.js
+
 │   │   └── tarefaService.js
+
 │   │
+
 │   ├── utils/
+
 │   │   ├── formatador.js
+
 │   │   ├── geradorId.js
+
 │   │   └── validador.js
+
 │   │
+
 │   ├── ui/
+
 │   │   └── menu.js
+
 │   │
+
 │   └── app.js
+
 │
+
 ├── data/
+
 │   └── tarefas.txt
+
 │
+
 ├── package.json
+
 └── .gitignore
+
 ⚙️ Funcionalidades
+
 O sistema implementa operações CRUD:
 
 Operação	Descrição
+
 Criar	Criar tarefas
 Ler	Listar tarefas
 Atualizar	Atualizar tarefa
 Excluir	Remover tarefas
+
 ▶️Como Executar o Projeto
+
 1. Instale o Node.js
+
 Baixe em:
 
 https://nodejs.org
@@ -74,63 +101,86 @@ git clone https://github.com/seu-usuario/taskflow-cli.git
 cd gerenciador-tarefas
 4. Instale as responsabilidades
 npm install
+
 5. Execute o projeto
+
 npm start
+
 Ou:
 
 node src/app.js
+
 🖥️ Interface do Sistema
+
 Ao iniciar:
 
 ===== MENU =====
+
 1 - Adicionar tarefa
 2 - Listar tarefas
 3 - Atualizar tarefa
 4 - Remover tarefa
 0 - Sair
+
 📋 Funcionalidades interessantes
+
 ➕ Adicionar tarefa
+
 Fluxo
+
 O usuário escolheu:
 
 1
 Depois informa:
 
 Descrição da tarefa:
+
 Exemplo
+
 Entrada
+
 Escolha uma opção: 1
+
 Descrição da tarefa: Estudar Node.js
 Às vezes, isso acontece por si só.
+
 Tarefa adicionada:
 [ ] 1 - Estudar Node.js
+
 Estrutura da tarefa criada
 {
   "id": 1,
   "descricao": "Estudar Node.js",
   "concluida": false
 }
+
 📋 Listar Tarefas
+
 Fluxo
 O usuário escolheu:
 
 2
 Exemplo de saída
+
 TAREFAS:
 
 [ ] 1 - Estudar Node.js
 [ ] 2 - Fazer exercícios
+
 ✏️ Atualizar Tarefa
+
 Fluxo
 O usuário escolheu:
 
 3
+
 Depois informa:
 
 ID da tarefa
 nova descrição
 Exemplo
 Entrada
+
 Escolha uma opção: 3
 ID da tarefa: 1
 Nova descrição: Estudar Node.js avançado
@@ -138,6 +188,7 @@ Nova descrição: Estudar Node.js avançado
 Tarefa atualizada.
 Caso a tarefa não exista
 Tarefa não encontrada.
+
 ❌ Removedor
 Fluxo
 O usuário escolheu:
@@ -152,15 +203,18 @@ Escolha uma opção: 4
 ID da tarefa: 1
 Às vezes, isso acontece por si só.
 Tarefa removida.
+
 🚪 Encerrar Sistema
 Fluxo
 0
 Às vezes, isso acontece por si só.
 Encerrando sistema...
+
 💾 Persistência de Dados
 As tarefas são armazenadas no arquivo:
 
 data/tarefas.txt
+
 📦 Estrutura do Arquivo
 Apesar da extensão .txt, o conteúdo é salvo no formato JSON.
 
@@ -172,7 +226,9 @@ Exemplo
     "concluida": false
   }
 ]
+
 🔄 Funcionamento da Persistência
+
 📖 Leitura
 O sistema:
 
@@ -190,7 +246,9 @@ salva novamente no arquivo.
 Utilizando:
 
 JSON.stringify()
+
 🧠 Arquitetura do Sistema
+
 📁 Serviços
 Responsável por:
 
@@ -201,7 +259,9 @@ Arquivos:
 
 arquivoService.js
 tarefaService.js
+
 🧰 Utilitários
+
 Responsável por:
 
 validação;
@@ -219,6 +279,7 @@ Arquivo:
 
 menu.js
 🚀 Arquivo Principal
+
 app.js
 Responsável por:
 
@@ -226,18 +287,23 @@ iniciar o sistema;
 criar arquivo;
 iniciar menu;
 controlar fluxo inicial.
+
 📌 Modelo de Dados
+
 Estrutura da
 {
   "id": 1,
   "descricao": "Texto da tarefa",
   "concluida": false
 }
+
 📊 Campos
+
 Campo	Tipo	Descrição
 eu ia	Número	Identificador único
 descrição	Corda	Texto da tarefa
 concluído	Booleano	Status da tarefa
+
 🔁 Fluxo Geral
 Usuário
    ↓
@@ -248,6 +314,7 @@ Processamento da opção
 Services
    ↓
 Arquivo TXT/JSON
+
 🛡️ Tratamento de erros
 O sistema possui:
 
@@ -267,14 +334,16 @@ Login de usuários
 Docker
 Testes automatizados
 Implantar em .
-🎯 Público-Alvo
-Projeto indicado para:
 
+🎯 Público-Alvo
+
+Projeto indicado para:
 estudantes;
 iniciantes em Node.js;
 guia de CRUD;
 estudo de terminal;
 prática de arquitetura modular.
+
 📄 Licença
 Este projeto está sob licença ISC.
 
