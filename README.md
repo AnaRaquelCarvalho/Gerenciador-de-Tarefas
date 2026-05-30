@@ -6,6 +6,8 @@
 ![CLI](https://img.shields.io/badge/CLI-Terminal-blue?style=for-the-badge)
 ![CRUD](https://img.shields.io/badge/CRUD-Complete-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-ISC-green?style=for-the-badge)
+
+
 Produtividade direto do terminal.
 
 📌 Sobre o Projeto
